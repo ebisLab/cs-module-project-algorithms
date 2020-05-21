@@ -1,0 +1,39 @@
+eating cookies 
+inputs = 
+	n cookies
+outputs = the number of possible ways to eat cookies
+
+relationship between input and output:
+	1 cookie
+	2 cookies
+	3 cookies
+
+walk through problem in a mechanical function:
+ our inputs is given as 3
+1. |||
+2. 2|
+3. |2
+4. 3
+
+n-1
+n-2
+n-3
+
+what am i building?
+we are building a function
+
+PLAN
+def eating_cookies(n)
+check negative cookies
+check for n = 0
+we’re going to make a recursive call
+recurse eating cookies
+id base case
+
+
+if n<0  -> venture 0
+id base case 
+if n=0
+return !
+else
+return eating_cookies(n-1)+ eating_cookies(n-2)+ eating_cookies(n-3)
